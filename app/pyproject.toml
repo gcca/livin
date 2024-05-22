@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "app"
+version = "0.1"
+description = "Livin app for routes planning and tracking"
+authors = ["gcca <whl@gcca.dev>"]
+license = "GPL-3.0"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+uvicorn = "^0.29.0"
+PyJWT = "^2.8.0"
+psycopg2 = "^2.9.9"
+psycopg2-binary = "^2.9.9"
+alembic = "^1.13.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+pytest = "^8.2.1"
+pytest-postgresql = "^6.0.0"
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
